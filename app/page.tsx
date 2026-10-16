@@ -11,9 +11,10 @@ import styles from "./page.module.scss";
 const categories: RecipeCategory[] = [
   "Усі",
   "Сніданки",
-  "Обіди",
-  "Вечері",
+  "Супи",
+  "Основні страви",
   "Десерти",
+  "Салати"
 ];
 
 export default function HomePage() {
@@ -89,7 +90,7 @@ export default function HomePage() {
 
   return (
     <main className={styles.main} id="top">
-      <header className={styles.header}>
+      {/* <header className={styles.header}>
         <Link href="/" className={styles.logo} aria-label="Home Menu — на початок">
           <span className={styles.logoIcon}>h.</span>
           <span>home menu</span>
@@ -103,7 +104,7 @@ export default function HomePage() {
         <a href="#recipes" className={styles.headerButton}>
           Знайти страву <span aria-hidden="true">↗</span>
         </a>
-      </header>
+      </header> */}
 
       <section className={styles.hero}>
         <div className={styles.heroContent}>
@@ -292,7 +293,7 @@ export default function HomePage() {
         )}
       </section>
 
-      <footer className={styles.footer}>
+      {/* <footer className={styles.footer}>
         <Link href="/" className={styles.logo}>
           <span className={styles.logoIcon}>h.</span>
           <span>home menu</span>
@@ -303,7 +304,7 @@ export default function HomePage() {
         <a href="#top" className={styles.backToTop}>
           На початок ↑
         </a>
-      </footer>
+      </footer> */}
     </main>
   );
 }

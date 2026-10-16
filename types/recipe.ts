@@ -2,8 +2,9 @@
 export type RecipeCategory =
   | "Усі"
   | "Сніданки"
-  | "Обіди"
-  | "Вечері"
+  | "Супи"
+  | "Основні страви"
+  | "Салати"
   | "Десерти";
 
 export type RecipeIngredient = {
